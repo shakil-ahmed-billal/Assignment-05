@@ -1,4 +1,4 @@
-
+// donation page function-1
 inputEl('donate-btn').addEventListener('click',function(){
 
     const balance = inputText('balance');
@@ -36,6 +36,9 @@ inputEl('donate-btn').addEventListener('click',function(){
     }
   
 })
+
+
+
 
 // feature button section......
 inputEl('donate-button').addEventListener('click', function(){
