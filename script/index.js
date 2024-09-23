@@ -37,6 +37,84 @@ inputEl('donate-btn').addEventListener('click',function(){
   
 })
 
+// donation page function-1
+inputEl('donate-btn2').addEventListener('click',function(){
+
+    const balance = inputText('balance');
+    const donateInput = inputValue('donate-input2');
+    const donateAmount = inputText('donate-amount2');
+
+    if(donateInput > 0 ){
+        if(balance > donateInput){
+
+            // balance update section....
+            const newBalance = balance - donateInput ;
+            inputEl('balance').innerText = newBalance ;
+            inputEl('donate-amount2').innerText = donateAmount + donateInput ;
+            
+            // History add section....
+            const div =  document.createElement('div');
+            div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
+            div.innerHTML = `
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
+            `;
+            inputEl('history-section').appendChild(div);
+
+            // module function 
+            // document.getElementById('donate-btn').setAttribute('onclick', "my_modal_1.showModal()");
+            inputEl('my_modal_1').showModal();
+            
+        }
+        else{
+            alert('Your Balance Low')
+        }
+    }
+    else{
+        alert('Please valid Input')
+    }
+  
+})
+
+// donation page function-3
+inputEl('donate-btn3').addEventListener('click',function(){
+
+    const balance = inputText('balance');
+    const donateInput = inputValue('donate-input3');
+    const donateAmount = inputText('donate-amount3');
+
+    if(donateInput > 0 ){
+        if(balance > donateInput){
+
+            // balance update section....
+            const newBalance = balance - donateInput ;
+            inputEl('balance').innerText = newBalance ;
+            inputEl('donate-amount3').innerText = donateAmount + donateInput ;
+            
+            // History add section....
+            const div =  document.createElement('div');
+            div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
+            div.innerHTML = `
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
+            `;
+            inputEl('history-section').appendChild(div);
+
+            // module function 
+            // document.getElementById('donate-btn').setAttribute('onclick', "my_modal_1.showModal()");
+            inputEl('my_modal_1').showModal();
+            
+        }
+        else{
+            alert('Your Balance Low')
+        }
+    }
+    else{
+        alert('Please valid Input')
+    }
+  
+})
+
 
 
 
