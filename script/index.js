@@ -17,10 +17,15 @@ inputEl('donate-btn').addEventListener('click',function(){
             const div =  document.createElement('div');
             div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
             div.innerHTML = `
-                <h1 class="mb-5 text-2xl font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
-                <p class="text-lg text-gray-500">Date : ${new Date()}</p>
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
             `;
             inputEl('history-section').appendChild(div);
+
+            // module function 
+            // document.getElementById('donate-btn').setAttribute('onclick', "my_modal_1.showModal()");
+            inputEl('my_modal_1').showModal();
+            
         }
         else{
             alert('Your Balance Low')

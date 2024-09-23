@@ -14,25 +14,27 @@
     <!-- script CDN link add -->
   </head>
   <body>
-    <header class="">
+    <header class="sticky top-0 glass">
       <nav class="bg-orange-50">
         <!-- main navbar section -->
-        <section class="w-10/12 mx-auto py-10 flex justify-between">
-          <a class="btn text-xl bg-lime-400 text-black font-bold px-7" href="./blog.html">Blog</a>
-          <div class="flex items-center">
-            <img src="./assets/logo.png" alt="" />
-            <p class="text-xl font-bold ml-5">Donate Bangladesh</p>
+        <section class=" w-11/12 md:w-10/12 mx-auto md:py-10 py-6 flex justify-between items-center">
+          <a class="btn md:text-xl bg-lime-400 text-black font-bold md:px-7" href="./blog.html">Blog</a>
+          <div class="md:flex flex-col md:flex-row justify-between items-center">
+            <div class="flex justify-center">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <p class="md:text-xl font-bold md:ml-5 text-center">Donate Bangladesh</p>
           </div>
           <div class="flex items-center">
             <img src="./assets/coin.png" alt="" />
-            <p class="text-xl font-bold ml-3">
-              <span id="balance" class="mr-2">5500</span>BDT
+            <p class=" md:text-xl font-bold md:ml-3 ">
+              <span id="balance" class="md:mr-2 mr-1">5500</span>BDT
             </p>
           </div>
         </section>
       </nav>
       <!-- button feature section -->
-      <section class="flex gap-5 justify-center items-center text-center mt-16">
+      <section class="flex gap-5 justify-center items-center text-center mt-8 pb-6">
         <button id="donate-button" class="btn text-xl bg-lime-400 text-black font-bold px-7">
           Donation
         </button>
@@ -41,11 +43,12 @@
         </button>
       </section>
     </header>
-    <main class="w-10/12 mx-auto py-10">
+    <main class=" w-11/12 md:w-10/12 mx-auto py-10">
+      <!-- donation page number--1 -->
         <section id="donate-page" class="">
-            <div class="flex border p-7 rounded-3xl shadow-2xl">
+            <div class=" md:flex border p-7 rounded-3xl shadow-2xl">
                 <img src="./assets/noakhali.png" alt="">
-                <div class="flex flex-col items-start px-9">
+                <div class="flex flex-col items-start md:px-9 mt-5 md:mt-0">
                     <div class="bg-gray-100 btn flex items-center">
                         <img src="./assets/coin.png" alt="">
                         <p class="text-lg font-semibold ml-2"><span id="donate-amount">600</span> BDT</p>
@@ -57,6 +60,24 @@
                 </div>
             </div>
         </section>
+        <!-- modal button section -->
+        <dialog id="my_modal_1" class="modal ">
+          <div class="modal-box flex flex-col justify-center items-center">
+            <h3 class="text-4xl font-bold">Congrats</h3>
+            <img class="mt-5 w-10" src="./assets/coin.png" alt="">
+            <p class="py-4 text-gray-500">You Have donated for humankind</p>
+            <h3 class="text-2xl font-bold">Successfully</h3>
+            <div class="modal-action">
+              <form method="dialog" class="flex justify-center items-center">
+                <!-- if there is a button in form, it will close the modal -->
+                <div class="flex justify-center items-center">
+                  <button class="btn">Close Confirmation</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        <!-- module button section -->
         <section id="history-page" class="my-20 hidden">
           <div id="history-section" class="">
           </div>
