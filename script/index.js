@@ -1,6 +1,7 @@
 // donation page function-1
 inputEl('donate-btn').addEventListener('click',function(){
 
+    // input section...
     const balance = inputText('balance');
     const donateInput = inputValue('donate-input');
     const donateAmount = inputText('donate-amount');
@@ -23,7 +24,6 @@ inputEl('donate-btn').addEventListener('click',function(){
             inputEl('history-section').appendChild(div);
 
             // module function 
-            // document.getElementById('donate-btn').setAttribute('onclick', "my_modal_1.showModal()");
             inputEl('my_modal_1').showModal();
             
         }
