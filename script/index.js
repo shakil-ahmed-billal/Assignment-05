@@ -6,7 +6,7 @@ inputEl('donate-btn').addEventListener('click',function(){
     const donateInput = inputValue('donate-input');
     const donateAmount = inputText('donate-amount');
 
-    if(donateInput > 0 ){
+    if(donateInput > 0){
         if(balance > donateInput){
 
             // balance update section....
