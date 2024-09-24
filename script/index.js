@@ -17,7 +17,7 @@ inputEl('donate-btn').addEventListener('click',function(){
             const div =  document.createElement('div');
             div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
             div.innerHTML = `
-                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali, Bangladesh</h1>
                 <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
             `;
             inputEl('history-section').appendChild(div);
@@ -56,7 +56,7 @@ inputEl('donate-btn2').addEventListener('click',function(){
             const div =  document.createElement('div');
             div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
             div.innerHTML = `
-                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
             `;
             inputEl('history-section').appendChild(div);
@@ -95,7 +95,7 @@ inputEl('donate-btn3').addEventListener('click',function(){
             const div =  document.createElement('div');
             div.classList.add('rounded-3xl', 'border' ,'p-10', 'shadow-2xl', 'my-5');
             div.innerHTML = `
-                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Donate for Flood at Noakhali</h1>
+                <h1 class="mb-5 md:text-2xl text-lg font-bold">${donateInput} Taka is Aid for Injured in the Quota Movement</h1>
                 <p class="md:text-lg text-sm text-gray-500">Date : ${new Date()}</p>
             `;
             inputEl('history-section').appendChild(div);
